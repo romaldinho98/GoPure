@@ -1,0 +1,32 @@
+@import "normalize";
+@import "variables";
+@import "grid";
+
+@import "header";
+@import "promo";
+@import "features-block-1";
+@import "features-block-2";
+@import "features-block-3";
+@import "benefits";
+@import "perfect";
+@import "footer";
+
+html {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: bold;
+}
+
+h1 {font-size: 56px;}
+h2 {
+	font-size: 35px;
+	color: $accent-text;
+}
+
+a {
+    text-decoration: none;
+}

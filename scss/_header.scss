@@ -1,0 +1,40 @@
+@import "variables";
+
+.header {
+	&__title {
+		height: 41px;
+		background-color: $accent-color;
+		h3 {
+			text-align: center;
+			color: #fff;
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 22px;
+			padding: 10px 0;
+		}
+	}
+}
+
+.menu {
+	height: 78px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		li {
+			margin-right: 24px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		a {
+			color: $accent-color;
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 22px;
+		}
+	}
+}
