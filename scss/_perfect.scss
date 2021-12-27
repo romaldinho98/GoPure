@@ -30,5 +30,93 @@
             }
         }
     }
+
+    &__button {
+        display: inline-block;
+        position: relative;
+        padding: 19px 92px;
+        background: $accent-color;
+        border-radius: 42px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url(/img/icons/arrow-right.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            top: 23px;
+            right: 21px;
+        }
+        &:hover {
+            background: $accent-text;
+            transition: ease-in-out 0.3;
+        }
+    }
+
+    &__button-mobile {
+        display: none;
+    }
 }
 
+@media (max-width: 1024px) {
+    .perfect {
+        &__bottle {
+            width: 452px;
+            height: 390.29px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .perfect {
+        padding: 60px 0;
+        &__content {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+        }
+
+        &__content-left {
+            margin-right: 0;
+            h2 {
+                text-align: center;
+            }
+        }
+
+        &__bottle {
+            width: 342px;
+            height: 295px;
+            margin-bottom: 48px;
+        }
+
+        &__button {
+            display: none;
+        }
+
+        &__button-mobile {
+            display: inline-block;
+            text-align: center;
+        }
+
+        &__conditions {
+            h5 {
+                &:last-child {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .perfect__button-mobile {
+        padding: 19px 100px;
+    }
+}

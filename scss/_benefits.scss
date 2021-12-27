@@ -35,4 +35,95 @@
             margin-right: 0;
         }
     }
+
+    &__mobile-button {
+        display: none;
+    }
+}
+
+.button__get-gopure {
+    display: inline-block;
+    position: relative;
+    padding: 19px 92px;
+    background: $accent-color;
+    border-radius: 42px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-image: url(/img/icons/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        top: 23px;
+        right: 21px;
+    }
+    &:hover {
+        background: $accent-text;
+        transition: ease-in-out 0.3;
+    }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+    .benefits {
+        padding: 80px 0;
+        h2 {
+            margin-bottom: 48px;
+        }
+        &__items {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__item {
+            margin-right: 0;
+            margin-bottom: 40px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__mobile-button {
+            display: block;
+            margin-bottom: 32px;
+            a {
+                left: 15px;
+                font-weight: 600;
+                position: relative;
+                font-size: 16px;
+                line-height: 28px;
+                text-align: center;
+                color: $accent-color;
+                &:hover {
+                    color: $accent-text;
+                }
+                &:before {
+                    position: absolute;
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(/img/icons/open-book.svg);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    bottom: 0;
+                    left: -30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .button__get-gopure {
+        padding: 19px 100px;
+    }
 }

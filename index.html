@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body>
+
     <header class="header">
         <div class="header__title">
             <h3>Free Shipping on Orders Over $60</h3>
@@ -26,6 +28,55 @@
                 <ul class="menu__items">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Help</a></li>
+                    <li><a href="#">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5 18.375V16.625C17.5 15.6967 17.1313 14.8065 16.4749 14.1501C15.8185 13.4937 14.9283 13.125 14 13.125H7C6.07174 13.125 5.1815 13.4937 4.52513 14.1501C3.86875 14.8065 3.5 15.6967 3.5 16.625V18.375" stroke="#1675BB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.5 9.625C12.433 9.625 14 8.058 14 6.125C14 4.192 12.433 2.625 10.5 2.625C8.567 2.625 7 4.192 7 6.125C7 8.058 8.567 9.625 10.5 9.625Z" stroke="#1675BB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>           
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.875 19.25C8.35825 19.25 8.75 18.8582 8.75 18.375C8.75 17.8918 8.35825 17.5 7.875 17.5C7.39175 17.5 7 17.8918 7 18.375C7 18.8582 7.39175 19.25 7.875 19.25Z" stroke="#1675BB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.5 19.25C17.9832 19.25 18.375 18.8582 18.375 18.375C18.375 17.8918 17.9832 17.5 17.5 17.5C17.0168 17.5 16.625 17.8918 16.625 18.375C16.625 18.8582 17.0168 19.25 17.5 19.25Z" stroke="#1675BB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M0.875 0.875H4.375L6.72 12.5913C6.80001 12.9941 7.01917 13.356 7.3391 13.6135C7.65904 13.8711 8.05936 14.0079 8.47 14H16.975C17.3856 14.0079 17.786 13.8711 18.1059 13.6135C18.4258 13.356 18.645 12.9941 18.725 12.5913L20.125 5.25H5.25" stroke="#1675BB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-mobile__show d-none">
+                <ul class="menu-mobile__show-items">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+
+            <nav class="menu-mobile">
+                <div class="menu-mobile__icon-burger">
+                    <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="2" rx="1" fill="#1675BB"/>
+                    <rect y="8" width="24" height="2" rx="1" fill="#1675BB"/>
+                    <rect y="16" width="24" height="2" rx="1" fill="#1675BB"/>
+                    </svg>    
+                </div>
+                <div class="menu-mobile__icon-burger_opened d-none">
+                    <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_191_5910)">
+                    <rect x="4.24756" y="-0.214355" width="24" height="2" rx="1" transform="rotate(45.1612 4.24756 -0.214355)" fill="#1675BB"/>
+                    <rect width="24" height="2" rx="1" transform="matrix(-0.705115 0.709093 0.709093 0.705115 19.7529 -0.214355)" fill="#1675BB"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_191_5910">
+                    <rect width="24" height="18" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </div>
+                <a href="#"><img class="menu__logo" src="img/Logo.png" alt="logo"></a>
+                <ul class="menu-mobile__items">
                     <li><a href="#">
                         <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.5 18.375V16.625C17.5 15.6967 17.1313 14.8065 16.4749 14.1501C15.8185 13.4937 14.9283 13.125 14 13.125H7C6.07174 13.125 5.1815 13.4937 4.52513 14.1501C3.86875 14.8065 3.5 15.6967 3.5 16.625V18.375" stroke="#1675BB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -77,6 +128,7 @@
 
     <section class="features-block-2">
         <div class="container features-block-2__content">
+            <img class="features-block-2__pod-mobile" src="img/pod.png" alt="pod">
             <div class="features-block-2__left-items">
                 <div class="features-block-2__item">
                     <img class="features-block-2__img" src="img/icons/features/icon_1.png" alt="icon">
@@ -95,7 +147,7 @@
             </div>
             <img class="features-block-2__pod" src="img/pod.png" alt="pod">
             <div class="features-block-2__right-items">
-                <div class="features-block-2__item">
+                <div class="features-block-2__item features-block-2__item-right">
                     <img class="features-block-2__img" src="img/icons/features/icon_3.png" alt="icon">
                     <div class="features-block-2__text">
                         <h3>PuriBloc Technology</h3>
@@ -116,7 +168,7 @@
     <section class="features-block-3">
         <div class="container features-block-3__content">
             <h2>Ready to Get Started? Get Your GOpure Today!</h2>
-            <a class="button" href="#">Purchase Now</a>    
+            <a class="button__purchase" href="#">Purchase Now</a>    
             <a class="features-block-3__button" href="#">See It In Action</a>
         </div>
     </section>
@@ -142,7 +194,10 @@
                     <h3>Helps with Digestion</h3>
                 </div>
             </div>
-            <a class="button button-center" href="#">Get Your GOpure</a>
+            <div class="benefits__mobile-button">
+                <a href="#">Find out how in our blogs</a>
+            </div>
+            <a class="button__get-gopure" href="#">Get Your GOpure</a>
         </div>
     </section>
 
@@ -157,9 +212,10 @@
                     <h5>You just don’t feel as energetic as you used to</h5>
                     <h5>You’re an athlete seeking enhanced performance</h5>
                 </div>
-                <a class="button" href="#">Get Your GOpure</a> 
+                <a class="perfect__button" href="#">Get Your GOpure</a> 
             </div>
-            <img src="img/bottle.png" alt="bottle">
+            <img class="perfect__bottle" src="img/bottle.png" alt="bottle">
+            <a class="perfect__button perfect__button-mobile" href="#">Get Your GOpure</a> 
         </div>
     </section>
 
@@ -245,10 +301,10 @@
                 </div>
             </nav>
             <div class="footer__rights">
-                <span>Copyrights © 2021 All Rights Reserved by Bloc Enterprises</span>
+                <span>Copyrights © 2021 <br class="footer__rights-br"> All Rights Reserved by Bloc Enterprises</span>
                 <div class="footer__rights-drop">
                     <span>Drop In, Drink Up</span>
-                    <img class="footer__rights-drop-img" src="img/icons/drop.png" alt="fill">
+                    <img class="footer__rights-drop-img" src="img/icons/drop.png" alt="drop">
                 </div>
             </div>
         </div>
@@ -256,4 +312,4 @@
 
     <script src="js/script.js"></script>
 </body>
-</html>
+</html>                     

@@ -62,3 +62,52 @@
     }
 }
 
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+    .promo {
+        padding: 95px 0;
+        min-height: 400px;
+    
+        &__content {
+            max-width: 425px;
+            h1 {
+                line-height: 57px;
+                margin-bottom: 16px;
+            }
+            &-descr {
+                font-size: 17px;
+                line-height: 25px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .logos-wrapper {
+        display: none;
+    }
+}
+
+@media (max-width: 376px) {
+    .promo {
+        padding: 80px 0;
+        min-height: 583px;
+        width: 100%;
+        background: url(../img/promo_bg_mobile.jpg) center (center / cover) no-repeat;
+        
+        &__content {
+            h1 {
+                text-align: center;
+                line-height: 57px;
+            }
+            &-descr {
+                text-align: center;
+            }
+        }
+    }
+
+    .button {
+        padding: 19px 127px;
+    }
+}

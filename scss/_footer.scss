@@ -8,6 +8,7 @@
         justify-content: space-between;
     }
     &__logo {
+        cursor: pointer;
         width: 150.98px;
         height: 41.42px;
     }
@@ -116,10 +117,13 @@
             text-align: center;
             color: #FFFFFF;
             background: #00BAF2;
-            margin-left: -81px;
+            margin-left: -79px;
             width: 81px;
             border-top-right-radius: 43px;
             border-bottom-right-radius: 43px;
+            &:hover {
+                background: #028bb4;
+            }
         }
     }
 }
@@ -139,6 +143,121 @@
         &-img {
             margin-left: 10px;
             height: 15.58px;
+        }
+    }
+    &-br {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+    .footer {
+        background: url(../img/footer_bg_mobile.jpg) center (center / cover) no-repeat;
+        &__menu {
+            flex-direction: column;
+        }
+
+        &__menu-block {
+            margin-bottom: 40px;
+        }
+
+        &__rights {
+            margin-top: 80px;
+        }
+    }
+
+    .social {
+        &__items {
+            margin-top: 40px;           
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .footer {
+        padding: 60px 0 44px;
+
+        &__logos {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__logo {
+            margin-bottom: 40px;
+        }
+
+        &__sertificates {
+            margin-bottom: 96px;
+        }
+
+        &__sertificate-1 {
+            height: 65px;
+            margin-right: 40px;
+        }
+        &__sertificate-2 {
+            height: 55px;
+            margin-right: 40px;
+        }
+        &__sertificate-3 {
+            height: 55px;
+        }
+
+
+
+        &::before {
+            top: 255px;
+            left: 16px;
+            max-width: 343px;
+        }
+    
+        &::after {
+            bottom: 180px;
+            left: 16px;
+            max-width: 343px;
+        }
+        
+    }
+
+    .footer__rights {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #FFFFFF;
+        &-drop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 32px;
+            &-img {
+                margin-left: 10px;
+                height: 15.58px;
+            }
+        }
+        &-br {
+            display: inline;
+        }
+        span {
+            text-align: center;
+        }
+    }
+
+    .social {
+        &__form {
+            input {
+                width: 344px; 
+            }
+            button {
+                margin-left: -75px;
+            }
         }
     }
 }
