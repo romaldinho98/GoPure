@@ -21,10 +21,24 @@ h1, h2 {
 	font-weight: bold;
 }
 
-h1 {font-size: 56px;}
+h1 {
+	font-size: 56px;
+
+	@media (max-width: 992px) {
+		font-size: 52px;
+	}
+	
+	@media (max-width: 768px) {
+		font-size: 42px;
+	}
+}
 h2 {
 	font-size: 35px;
 	color: $accent-text;
+
+	@media (max-width: 768px) {
+		font-size: 32px;
+	}
 }
 
 a {
@@ -34,5 +48,3 @@ a {
 .d-none {
 	display: none;
 }
-
-@import "media";

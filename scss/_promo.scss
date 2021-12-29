@@ -2,21 +2,67 @@
     padding: 210px 0;
 	min-height: 767px;
     width: 100%;
-	background: url(../img/promo_bg.jpg) center (center / cover) no-repeat;
+    position: relative;
+
+    @media (max-width: 992px) {
+        padding: 95px 0;
+        min-height: 400px;
+    }
+
+    @media (max-width: 992px) {
+        padding: 185px 0 90px;
+        min-height: 400px;
+    }
+
+    &__background {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+        top: 0;
+    }
 
     &__content {
         max-width: 655px;
         color: #fff;
+
         h1 {
             line-height: 70px;
             margin-bottom: 16px;
+
+            @media (max-width: 992px) {
+                line-height: 57px;
+                margin-bottom: 16px;
+            }
+
+            @media (max-width: 576px) {
+                text-align: center;
+                line-height: 57px;
+            }
         }
+
         &-descr {
             max-width: 605px;
             font-weight: 500;
             font-size: 20px;
             line-height: 28px;
             margin-bottom: 46px;
+
+            @media (max-width: 992px) {
+                font-size: 17px;
+                line-height: 25px;
+                margin-bottom: 25px;
+            }
+
+            @media (max-width: 576px) {
+                text-align: center;
+            }
+
+        }
+
+        @media (max-width: 992px) {
+            max-width: 425px;
         }
     }
 }
@@ -24,7 +70,8 @@
 .button {
     display: inline-block;
     position: relative;
-    padding: 19px 92px;
+    padding: 17px 12px;
+    min-width: 270px;
     background: $accent-color;
     border-radius: 42px;
     color: #fff;
@@ -40,12 +87,16 @@
         background-image: url(/img/icons/arrow-right.svg);
         background-repeat: no-repeat;
         background-position: center center;
-        top: 23px;
+        top: 21px;
         right: 21px;
     }
     &:hover {
         background: $accent-text;
         transition: ease-in-out 0.3;
+    }
+
+    @media (max-width: 576px) {
+        min-width: 100%;
     }
 }
 
@@ -60,54 +111,8 @@
         align-items: center;
         justify-content: space-between;
     }
-}
 
-@media (max-width: 1024px) {
-}
-
-@media (max-width: 768px) {
-    .promo {
-        padding: 95px 0;
-        min-height: 400px;
-    
-        &__content {
-            max-width: 425px;
-            h1 {
-                line-height: 57px;
-                margin-bottom: 16px;
-            }
-            &-descr {
-                font-size: 17px;
-                line-height: 25px;
-                margin-bottom: 25px;
-            }
-        }
-    }
-
-    .logos-wrapper {
-        display: none;
-    }
-}
-
-@media (max-width: 375px) {
-    .promo {
-        padding: 80px 0;
-        min-height: 583px;
-        width: 100%;
-        background: url(../img/promo_bg_mobile.jpg) center (center / cover) no-repeat;
-        
-        &__content {
-            h1 {
-                text-align: center;
-                line-height: 57px;
-            }
-            &-descr {
-                text-align: center;
-            }
-        }
-    }
-
-    .button {
-        padding: 19px 127px;
+    @media (max-width: 992px) {
+        display: none;       
     }
 }

@@ -1,38 +1,86 @@
 .footer {
+    z-index: 1;
     position: relative;
     min-height: 511px;
-    background: url(../img/footer_bg.png) center (center / cover) no-repeat;
-    padding: 49px 0 35px;
+    background-color: #004B83;
+    background-image: url(../img/Logo_bg.svg);
+    background-repeat: no-repeat, repeat;
+    background-position: bottom -310px right -147px;
+    padding: 49px 0 32px;
+
+    @media (max-width: 576px) {
+        padding: 60px 0 44px;
+    }
+
     &__logos {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
+
     &__logo {
         cursor: pointer;
         width: 150.98px;
         height: 41.42px;
+
+        @media (max-width: 576px) {
+            margin-bottom: 40px;
+        }
     }
+
     &__sertificates {
         display: flex;
         justify-content: flex-start;
         margin-bottom: 60px;
+
+        @media (max-width: 576px) {
+            margin-bottom: 96px;
+        }
     }
 
     &__sertificate-1 {
         height: 50px;
         margin-right: 32px;
+
+        @media (max-width: 576px) {
+            height: 65px;
+            margin-right: 40px;
+        }
     }
     &__sertificate-2 {
         height: 41px;
         margin-right: 32px;
+
+        @media (max-width: 576px) {
+            height: 55px;
+            margin-right: 40px;
+        }
     }
     &__sertificate-3 {
         height: 42px;
+
+        @media (max-width: 576px) {
+            height: 55px;
+        }
     }
 
     &__menu {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
     }
     &__menu-block {
         &-title {
@@ -51,7 +99,15 @@
             font-size: 15px;
             line-height: 22px;
             color: #FFFFFF;
-        }    
+        }
+        
+        @media (max-width: 992px) {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 576px) {
+            margin-bottom: 40px;
+        }
     }
 
     &::before {
@@ -60,6 +116,12 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.17);
         top: 130px;
         width: 100%;
+
+        @media (max-width: 576px) {
+            top: 255px;
+            left: 16px;
+            max-width: 343px;
+        }
     }
 
     &::after {
@@ -68,6 +130,12 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.17);
         bottom: 95px;
         width: 100%;
+
+        @media (max-width: 576px) {
+            bottom: 180px;
+            left: 16px;
+            max-width: 343px;
+        }
     }
 }
 
@@ -83,6 +151,11 @@
     &__items {
         margin-top: 80px;
         display: flex;
+
+        @media (max-width: 992px) {
+            margin-top: 30px;
+        }
+
         li {
             margin-right: 40px;
         }
@@ -101,11 +174,15 @@
             border-radius: 43px;
             height: 50px;
             border: solid white;
-            width: 334px;
+            max-width: 334px;
             outline: none;
             &::placeholder {
                 color: #306D9A;
                 opacity: 0.6;
+            }
+
+            @media (max-width: 576px) {
+                max-width: 100%; 
             }
         }
         button {
@@ -124,6 +201,10 @@
             &:hover {
                 background: #028bb4;
             }
+
+            @media (max-width: 576px) {
+                margin-left: -75px;
+            }
         }
     }
 }
@@ -136,94 +217,8 @@
     font-size: 15px;
     line-height: 22px;
     color: #FFFFFF;
-    &-drop {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &-img {
-            margin-left: 10px;
-            height: 15.58px;
-        }
-    }
-    &-br {
-        display: none;
-    }
-}
 
-@media (max-width: 1024px) {
-}
-
-@media (max-width: 768px) {
-    .footer {
-        background: url(../img/footer_bg_mobile.jpg) center (center / cover) no-repeat;
-        &__menu {
-            flex-direction: column;
-        }
-
-        &__menu-block {
-            margin-bottom: 40px;
-        }
-
-        &__rights {
-            margin-top: 80px;
-        }
-    }
-
-    .social {
-        &__items {
-            margin-top: 40px;           
-        }
-    }
-}
-
-@media (max-width: 375px) {
-    .footer {
-        padding: 60px 0 44px;
-
-        &__logos {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        &__logo {
-            margin-bottom: 40px;
-        }
-
-        &__sertificates {
-            margin-bottom: 96px;
-        }
-
-        &__sertificate-1 {
-            height: 65px;
-            margin-right: 40px;
-        }
-        &__sertificate-2 {
-            height: 55px;
-            margin-right: 40px;
-        }
-        &__sertificate-3 {
-            height: 55px;
-        }
-
-
-
-        &::before {
-            top: 255px;
-            left: 16px;
-            max-width: 343px;
-        }
-    
-        &::after {
-            bottom: 180px;
-            left: 16px;
-            max-width: 343px;
-        }
-        
-    }
-
-    .footer__rights {
-        display: flex;
+    @media (max-width: 576px) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -232,32 +227,29 @@
         font-size: 15px;
         line-height: 22px;
         color: #FFFFFF;
-        &-drop {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    }
+    
+    &-drop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 576px) {
             margin-top: 32px;
-            &-img {
-                margin-left: 10px;
-                height: 15.58px;
-            }
         }
-        &-br {
-            display: inline;
-        }
-        span {
-            text-align: center;
+        &-img {
+            margin-left: 10px;
+            height: 15.58px;
         }
     }
 
-    .social {
-        &__form {
-            input {
-                width: 344px; 
-            }
-            button {
-                margin-left: -75px;
-            }
+    &-br {
+        display: none;   
+    }
+
+    span {
+        @media (max-width: 576px) {
+            text-align: center;
         }
     }
 }
