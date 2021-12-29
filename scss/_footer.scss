@@ -49,7 +49,7 @@
 
         @media (max-width: 576px) {
             height: 65px;
-            margin-right: 40px;
+            margin-right: 20px;
         }
     }
     &__sertificate-2 {
@@ -58,7 +58,7 @@
 
         @media (max-width: 576px) {
             height: 55px;
-            margin-right: 40px;
+            margin-right: 20px;
         }
     }
     &__sertificate-3 {
@@ -119,8 +119,6 @@
 
         @media (max-width: 576px) {
             top: 255px;
-            left: 16px;
-            max-width: 343px;
         }
     }
 
@@ -133,8 +131,6 @@
 
         @media (max-width: 576px) {
             bottom: 180px;
-            left: 16px;
-            max-width: 343px;
         }
     }
 }
