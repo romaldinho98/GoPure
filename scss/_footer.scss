@@ -1,9 +1,7 @@
 .footer {
     z-index: 1;
     position: relative;
-    min-height: 511px;
     background-color: #004B83;
-    background-image: url(../img/Logo_bg.svg);
     background-repeat: no-repeat, repeat;
     background-position: bottom -310px right -147px;
     padding: 49px 0 32px;
@@ -179,6 +177,7 @@
 
             @media (max-width: 576px) {
                 max-width: 100%; 
+                flex: 1;
             }
         }
         button {

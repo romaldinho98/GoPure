@@ -1,15 +1,12 @@
-const menuMobileIcon = document.querySelector(".menu-mobile__icon-burger"),
-    menuMobileOpenIcon = document.querySelector(".menu-mobile__icon-burger_opened"),
+const menuMobileIcon = document.querySelector(".menu__icon-burger"),
+    menuMobileOpenIcon = document.querySelector(".menu__icon-burger_opened"),
     menuMobile = document.querySelector(".menu-mobile__show");
 
-menuMobileIcon.addEventListener ('click', () => {
-    menuMobile.classList.toggle("d-none");
+const toggleFn = () => {
+    menuMobile.classList.toggle("menu-mobile__visible");
     menuMobileOpenIcon.classList.toggle("d-none");
     menuMobileIcon.classList.toggle("d-none");
-});
+};
 
-menuMobileOpenIcon.addEventListener ('click', () => {
-    menuMobile.classList.toggle("d-none");
-    menuMobileOpenIcon.classList.toggle("d-none");
-    menuMobileIcon.classList.toggle("d-none");
-});
+menuMobileIcon.addEventListener ('click', toggleFn);
+menuMobileOpenIcon.addEventListener ('click', toggleFn);
